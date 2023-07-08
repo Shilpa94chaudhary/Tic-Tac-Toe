@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="matrix-container">
+      <div class="matric-board">
+        <div class="matrix-box" id="matrix-box-1-1" data-index="0"></div>
+        <div class="matrix-box" id="matrix-box-1-2" data-index="1"></div>
+        <div class="matrix-box" id="matrix-box-1-3" data-index="2"></div>
+        <div class="matrix-box" id="matrix-box-2-1" data-index="3"></div>
+        <div class="matrix-box" id="matrix-box-2-2" data-index="4"></div>
+        <div class="matrix-box" id="matrix-box-2-3" data-index="5"></div>
+        <div class="matrix-box" id="matrix-box-3-1" data-index="6"></div>
+        <div class="matrix-box" id="matrix-box-3-2" data-index="7"></div>
+        <div class="matrix-box" id="matrix-box-3-3" data-index="8"></div>
+      </div>
+      <div>
+        <button class="button-css" id="reset-button">Reset</button>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="message"><span id="modal-message"></span></div>
+        <div>
+          <button class="button-css" id="modal-close">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
