@@ -39,6 +39,7 @@ function handleClick(boxIndex) {
   boxes[boxIndex].classList.add(`player-${currentPlayer.toLowerCase()}`);
 
   if (checkWin(currentPlayer)) {
+    // setTimeout(announceWinner(currentPlayer), 3000);
     announceWinner(currentPlayer);
     gameActive = false;
     return;
@@ -66,12 +67,12 @@ function isTie() {
 }
 
 function announceWinner(player) {
-  modalMessage.textContent = `Player ${player} wins!`;
+  modalMessage.textContent = `${player} WINNER!`;
   showModal();
 }
 
 function announceTie() {
-  modalMessage.textContent = "It's a tie!";
+  modalMessage.textContent = "XO DRAW!";
   showModal();
 }
 
@@ -83,6 +84,7 @@ function showModal() {
 function hideModal() {
   modal.style.display = "none";
   overlay.style.display = "none";
+  resetGame();
 }
 
 function resetGame() {
