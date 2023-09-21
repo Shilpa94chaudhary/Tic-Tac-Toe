@@ -39,7 +39,6 @@ function handleClick(boxIndex) {
   boxes[boxIndex].classList.add(`player-${currentPlayer.toLowerCase()}`);
 
   if (checkWin(currentPlayer)) {
-    // setTimeout(announceWinner(currentPlayer), 3000);
     announceWinner(currentPlayer);
     gameActive = false;
     return;
